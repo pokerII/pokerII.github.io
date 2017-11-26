@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+
+    
+
+    <title>
+      javascript分享会笔记 | PokerII 
+    </title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    
+      <meta name="author" content="PokerII">
+    
+    
+
+    <meta name="description" content="注：此为分享记录笔记（分享者Jerry），整理为笔者(PokerII)，转载请注明出处。  ###Javascript能做什么   动态交互效果，跑马灯、DOM切换 HTML5,画布及矢量图形、离线应用、本地接口、移动端类原生应用 Js框架组件，AngularJs、backbone、extjs、dojoToolkit、">
+<meta name="keywords" content="js,share">
+<meta property="og:type" content="article">
+<meta property="og:title" content="javascript分享会笔记 | PokerII">
+<meta property="og:url" content="http://pokerII.github.io/2017/11/26/jsshare/index.html">
+<meta property="og:site_name" content="PokerII">
+<meta property="og:description" content="注：此为分享记录笔记（分享者Jerry），整理为笔者(PokerII)，转载请注明出处。  ###Javascript能做什么   动态交互效果，跑马灯、DOM切换 HTML5,画布及矢量图形、离线应用、本地接口、移动端类原生应用 Js框架组件，AngularJs、backbone、extjs、dojoToolkit、jqueryUI 基于Node.js的工具类应用，Grunt、bower、nod">
+<meta property="og:locale" content="zh-CN">
+<meta property="og:image" content="http://pokerimages.qiniudn.com/dombom.jpg">
+<meta property="og:image" content="http://pokerimages.qiniudn.com/scope.jpg">
+<meta property="og:updated_time" content="2017-11-26T05:25:59.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="javascript分享会笔记 | PokerII">
+<meta name="twitter:description" content="注：此为分享记录笔记（分享者Jerry），整理为笔者(PokerII)，转载请注明出处。  ###Javascript能做什么   动态交互效果，跑马灯、DOM切换 HTML5,画布及矢量图形、离线应用、本地接口、移动端类原生应用 Js框架组件，AngularJs、backbone、extjs、dojoToolkit、jqueryUI 基于Node.js的工具类应用，Grunt、bower、nod">
+<meta name="twitter:image" content="http://pokerimages.qiniudn.com/dombom.jpg">
+    
+    
+    
+      <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    
+    <link rel="stylesheet" href="/css/uno.css">
+    <link rel="stylesheet" href="/css/highlight.css">
+    <link rel="stylesheet" href="/css/archive.css">
+    <link rel="stylesheet" href="/css/china-social-icon.css">
+
+</head>
+<body>
+
+    <span class="mobile btn-mobile-menu">
+        <i class="icon icon-list btn-mobile-menu__icon"></i>
+        <i class="icon icon-x-circle btn-mobile-close__icon hidden"></i>
+    </span>
+
+    
+
+<header class="panel-cover panel-cover--collapsed">
+
+
+  <div class="panel-main">
+
+  
+    <div class="panel-main__inner panel-inverted">
+    <div class="panel-main__content">
+
+        
+
+        <h1 class="panel-cover__title panel-title"><a href="/" title="link to homepage">PokerII</a></h1>
+        <hr class="panel-cover__divider" />
+
+        
+        <p class="panel-cover__description">
+          talk is cheap, show me the code
+        </p>
+        <hr class="panel-cover__divider panel-cover__divider--secondary" />
+        
+
+        <div class="navigation-wrapper">
+
+          <nav class="cover-navigation cover-navigation--primary">
+            <ul class="navigation">
+
+              
+                
+                <li class="navigation__item"><a href="/#blog" title="" class="blog-button">首页</a></li>
+              
+                
+                <li class="navigation__item"><a href="/archives" title="" class="">归档</a></li>
+              
+                
+                <li class="navigation__item"><a href="/about" title="" class="">简历</a></li>
+              
+                
+                <li class="navigation__item"><a href="/tags" title="" class="">标签</a></li>
+              
+
+            </ul>
+          </nav>
+
+          <!-- ----------------------------
+To add a new social icon simply duplicate one of the list items from below
+and change the class in the <i> tag to match the desired social network
+and then add your link to the <a>. Here is a full list of social network
+classes that you can use:
+
+    icon-social-500px
+    icon-social-behance
+    icon-social-delicious
+    icon-social-designer-news
+    icon-social-deviant-art
+    icon-social-digg
+    icon-social-dribbble
+    icon-social-facebook
+    icon-social-flickr
+    icon-social-forrst
+    icon-social-foursquare
+    icon-social-github
+    icon-social-google-plus
+    icon-social-hi5
+    icon-social-instagram
+    icon-social-lastfm
+    icon-social-linkedin
+    icon-social-medium
+    icon-social-myspace
+    icon-social-path
+    icon-social-pinterest
+    icon-social-rdio
+    icon-social-reddit
+    icon-social-skype
+    icon-social-spotify
+    icon-social-stack-overflow
+    icon-social-steam
+    icon-social-stumbleupon
+    icon-social-treehouse
+    icon-social-tumblr
+    icon-social-twitter
+    icon-social-vimeo
+    icon-social-xbox
+    icon-social-yelp
+    icon-social-youtube
+    icon-social-zerply
+    icon-mail
+
+-------------------------------->
+
+<!-- add social info here -->
+
+
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="panel-cover--overlay"></div>
+  </div>
+</header>
+
+    <div class="content-wrapper">
+        <div class="content-wrapper__inner entry">
+            
+
+<article class="post-container post-container--single">
+
+  <header class="post-header">
+    
+    <h1 class="post-title">javascript分享会笔记</h1>
+
+    
+
+    <div class="post-meta">
+      <time datetime="2017-11-26" class="post-meta__date date">2017-11-26</time> 
+
+      <span class="post-meta__tags tags">
+
+          
+
+          
+             &#8226; 标签:
+            <font class="tags">
+              <a class="tags-link" href="/tags/js/">js</a>, <a class="tags-link" href="/tags/share/">share</a>
+            </font>
+          
+
+      </span>
+    </div>
+    
+    
+
+  </header>
+
+  <section id="post-content" class="article-content post">
+    <p>注：此为分享记录笔记（分享者Jerry），整理为笔者(PokerII)，转载请注明出处。</p>
+<blockquote>
+<p>###Javascript能做什么</p>
+</blockquote>
+<ul>
+<li>动态交互效果，跑马灯、DOM切换</li>
+<li>HTML5,画布及矢量图形、离线应用、本地接口、移动端类原生应用</li>
+<li>Js框架组件，AngularJs、backbone、extjs、dojoToolkit、jqueryUI</li>
+<li>基于Node.js的工具类应用，Grunt、bower、nodewebkit</li>
+</ul>
+<p>那么Javascript功能这么强大，我们应该做些什么呢？</p>
+<p>More and more development energy is being put into new technologies, such as the ones coming out of HTML5 or the new versions of ECMAScript.<br>But there isn’t any point to diving into new technologies, or using the hottest libraries, if you don’t have a proper understanding of the fundamental characteristics of the JavaScript language.</p>
+<h6 id="John-Resig-Secrets-of-the-javascript-ninja"><a href="#John-Resig-Secrets-of-the-javascript-ninja" class="headerlink" title="-John Resig   Secrets of the javascript ninja"></a>-John Resig   Secrets of the javascript ninja</h6><p>这是《js忍者秘诀》作者说的两段话，大概意思是说：越来越多的新的开发方式流行起来，例如HTML5或者新版本的ECMAScript特性。但是！，不管多新的技术或者多热门的类库，如果你对基础的Js语法没有真正的理解透的话，这一切都是徒劳。</p>
+<p>PS：其实可以看到在工作和学习过程中，我们经常遇到一些初级前端工程师特别热衷于去寻找一些特效特别绚丽的各种体积庞大的插件，只求能够使用，但是对一些基础的概念都模糊不清（比如我^ ^）。</p>
+<blockquote>
+<p>###Javascript函数</p>
+</blockquote>
+<p>javascript主要内容可以用下图说明：<br><img src="http://pokerimages.qiniudn.com/dombom.jpg" alt="javascript-dom-bom"><br>包含宿主（通常指浏览器）的文档对象模型（DOM）和浏览器对象模型（BOM），然后就是核心ECMAScript.本分享将简要对core作一些介绍。</p>
+<blockquote>
+<p>####函数的调用方式</p>
+</blockquote>
+<p>The level of the sophistication of all the code you’ll ever write in JavaScript hinges upon this realization.</p>
+<p>######-John Resig   Secrets of the javascript ninja</p>
+<p>大概意思是，你代码的优雅程度取决于你对函数的认知深浅。</p>
+<p>在javascript中，函数被称作first-class objects，可以说成一等公民，非常重要。<br>为什么函数为一等公民因为以下特性：</p>
+<ul>
+<li><p>created via literals(可以通过字面创建)</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">var array = [];</span><br><span class="line">/*而不是 var array = new Array();*/</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>assigned to variables or properties(可以作为参数赋值)</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">var fun = function()&#123;&#125;;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>passed as parameters (可以作为参数传递)</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">var fun = &#123;</span><br><span class="line">	a:function()&#123;&#125;,</span><br><span class="line">    b:function()&#123;&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>returned as function results(返回一个值)</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">function fun(args)&#123;</span><br><span class="line">	return function a()&#123;&#125;;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>possess properties and methods（拥有的属性和方法）</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">window.height();</span><br><span class="line">/*height就是他的方法*/</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<p>那它的调用方式(invoke)有哪些呢？<br>PS：熟悉调用方式才能对this的指向有较好的理解</p>
+<ul>
+<li><p>一般调用</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">function a()&#123;&#125;</span><br><span class="line">a()/*一般调用*/</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>作为方法调用</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">var obj = &#123;</span><br><span class="line">	a:2,</span><br><span class="line">    fun2:function()&#123;&#125;</span><br><span class="line">&#125;</span><br><span class="line">obj.fun2()//作为方法调用</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>作为构造函数调用</p>
+</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">var Person = funtion()&#123;</span><br><span class="line">	this.name = &quot;PokerMe&quot;;</span><br><span class="line">    this.age  = 24;</span><br><span class="line">&#125;</span><br><span class="line">var persion = new Person();//作为构造函数调用，即实例化</span><br></pre></td></tr></table></figure>
+<ul>
+<li>apply and call（这个比较难理解，可以理解为改变this的指向）</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">var color = &quot;white&quot;;</span><br><span class="line">var colors = &#123;</span><br><span class="line">	color:&quot;black&quot;;</span><br><span class="line">&#125; </span><br><span class="line">function getColor(a,b,c)&#123;</span><br><span class="line">	console.log(this.color);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">getColor();//this指向全局的color,即输出 white</span><br><span class="line"></span><br><span class="line">getColor.call(colors,a,b,c)</span><br><span class="line">//this指向对象colors里面的color，即输出black</span><br><span class="line">getColor.apply(colors,arguments);</span><br><span class="line">//apply和call只是在参数列表上不一样，call需列出所有参数，而apply可以传递一个数组或者对象</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>####函数的作用域</p>
+</blockquote>
+<p>通过讲解以上的<code>函数特性</code>、<code>函数调用invoke</code>,应该会对this的指向有初步的理解，那么现在就来介绍下<code>作用域(scope)</code>，下图为其执行的顺序：<br><img src="http://pokerimages.qiniudn.com/scope.jpg" alt="scope"><br>在图中可以看到，作用域链是从当前定义的函数往外面找的，从小的找到大作用域。</p>
+<p>先来看两段代码：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">function JQuery()&#123;</span><br><span class="line">	console.log(global);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">(function(global)&#123;</span><br><span class="line">	var jQuery = function()&#123;</span><br><span class="line">    	console.log(global);</span><br><span class="line">    &#125;;</span><br><span class="line">    global.jQuery = jQuery /*块级作用域暴露接口 供外部调用*/</span><br><span class="line">&#125;(this))</span><br></pre></td></tr></table></figure>
+<p>第一种代码是没有经过封装的，其global调用全局window属性，可以任意修改，而第二种，添加封装，将this只向其内部，这样写的好处是，避免函数内部变量的污染，可以直接暴露接口，让外部调用。<br>PS：第二种为匿名函数.常见的插件都会看到这样一段代码：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">(function( $ , undefined ) &#123;</span><br><span class="line">	//todo....</span><br><span class="line">&#125;)( jQuery );</span><br></pre></td></tr></table></figure></p>
+<p>其目的也是为了构建自己的作用域，不受其他代码的影响。而且其函数是立即执行的。</p>
+<p>熟悉了基本的函数特性、函数调用方式、函数的作用域。现在有一些零散的笔记分点列出，作为对函数的扩展理解。</p>
+<blockquote>
+<p>####闭包</p>
+</blockquote>
+<p>在初级程序员眼中，这或许是一个非常高大上的名词，写程序的过程中不知道它的存在，但是一旦面试….，这个问题就是必问的几个点，我之前也理解不清楚，比较模糊，此次分享之后就比较清晰了。<br>那什么是闭包（closure）呢？先来看一段代码<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">//第一个函数</span><br><span class="line">var a = &quot;a&quot;;</span><br><span class="line">function fun()&#123;</span><br><span class="line">    console.log(a);</span><br><span class="line">&#125;</span><br><span class="line">fun();</span><br><span class="line">//第二个函数</span><br><span class="line">var b = &quot;b&quot;;</span><br><span class="line">globalC = null</span><br><span class="line">function fun1()&#123;</span><br><span class="line">   var c = &quot;c&quot;;</span><br><span class="line">   globalC = function()&#123;</span><br><span class="line">        console.log(c);</span><br><span class="line">   &#125;</span><br><span class="line">&#125;</span><br><span class="line">console.log(c);//undefined</span><br><span class="line">fun1();//赋值globalC</span><br><span class="line">globalC();//输出c</span><br></pre></td></tr></table></figure></p>
+<p>这两个函数中，第一个是输出变量a，第二个在注释中表明了输出结果.fun()和globalC()同为闭包函数。这里有两种理解，什么是闭包。<br>1.闭包就是能访问局部变量的函数<br>2.闭包就是带数据的函数（不是很准确）<br>也就是说如果一个函数，他跟访问相对局部域下的变量，及为闭包。闭包就是一种特殊的函数。<br>再来看一段出镜率比较高的一段代码：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">var i=0,l=10,j=0,funs=[];</span><br><span class="line">for(;i&lt;l;i++)&#123;</span><br><span class="line">funs.push(function()&#123;</span><br><span class="line">    consolo.log(i);</span><br><span class="line">&#125;);</span><br><span class="line">&#125;</span><br><span class="line">//i=?</span><br><span class="line"> // 闭包保存数据是什么？</span><br><span class="line">for(;j&lt;l;j++)&#123;</span><br><span class="line">    funs[j]();</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>先看注释的里面的两个问题，<br>1.i等于什么当执行到注释这里的时候？分析下过程。for循环中，i被累加10次，为10,。<br>2.闭包保存的数据是什么？哪个函数是闭包？<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">function()&#123;</span><br><span class="line">console.log(i);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>对吧？后面 一个for循环即执行这个闭包函数10次。那结果应该是什么?<br>执行一下就知道是10个10。因为第一个for循环已经将全局i赋值为10了，再怎么循环调用的都是这个i。</p>
+<blockquote>
+<p>####记忆性</p>
+</blockquote>
+<p>函数记忆性，我不得不承认这是一个优化代码效率的非常好的一种手段。你在下面的代码和测试结果中会惊叹其天壤之别的效率问题，也会明白，原来代码优化是如此重要。<br>分享者用输出Fibonacci数列(什么是Fibonacci数列？1,1,2,3,5,8….  【就是后者值为前两者值的和】)来讲明该函数特效。代码如下：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br></pre></td><td class="code"><pre><span class="line"> // [ 1, 1, 2, 3, 5, 8, 11 ]</span><br><span class="line">// 常规思路函数fibo()</span><br><span class="line">    var fibo = function( n ) &#123;</span><br><span class="line">        if ( n === 1 || n === 2 ) &#123;</span><br><span class="line">            return 1;</span><br><span class="line">        &#125; else &#123;</span><br><span class="line">            return fibo( n - 1 ) + fibo( n - 2 );</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;;</span><br><span class="line">//可记忆性方法实现 fibo2()</span><br><span class="line">    var fibo2 = function( n ) &#123;</span><br><span class="line">        var n1, n2;</span><br><span class="line">        if ( !fibo2.cache ) &#123;</span><br><span class="line">            fibo2.cache = [];</span><br><span class="line">        &#125;</span><br><span class="line">        if ( n === 1 || n === 2 ) &#123;</span><br><span class="line">            return 1;</span><br><span class="line">        &#125; else &#123;</span><br><span class="line">            n1 = fibo2.cache[ n - 1 ];</span><br><span class="line">            if ( !n1 ) &#123;</span><br><span class="line">                n1 = fibo2.cache[ n - 1 ] = fibo2( n - 1 );</span><br><span class="line">            &#125;</span><br><span class="line"></span><br><span class="line">            n2 = fibo2.cache[ n - 2 ];</span><br><span class="line">            if ( !n2 ) &#123;</span><br><span class="line">                n2 = fibo2.cache[ n - 2 ] = fibo2( n - 2 );</span><br><span class="line">            &#125;</span><br><span class="line"></span><br><span class="line">            return n1 + n2;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    console.time( &quot;fibo&quot; );</span><br><span class="line">    console.log( fibo(40) );</span><br><span class="line">    console.timeEnd( &quot;fibo&quot; );</span><br><span class="line"></span><br><span class="line">    console.log( &quot;----&quot; );</span><br><span class="line"></span><br><span class="line">    console.time( &quot;fibo2&quot; );</span><br><span class="line">    console.log( fibo2(40) );</span><br><span class="line">    console.timeEnd( &quot;fibo2&quot; );</span><br></pre></td></tr></table></figure></p>
+<p>我们用两者输出Fibonacci数列的第40位应该是多少。读者可以复制执行该代码。结果是  第一个函数的执行时间是2289ms,而第二个函数的是1ms,效率上的差别是几千倍！。所以当我们书写代码的时候，考虑优化代码，不仅是算法效率，在浏览器渲染，标签绑定上也都可以通过可记忆性来优化代码，很简单的Jquery事件注册例子：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">//每一次都查找</span><br><span class="line">$(&apos;.btn&apos;).click(...)</span><br><span class="line">$(&apos;.btn&apos;).toggle(...)</span><br><span class="line">//只查找一次</span><br><span class="line">var clickbtn = $(&apos;.btn&apos;);</span><br><span class="line">clickbtn.click(...);</span><br><span class="line">clickbtn.toggle(...);</span><br><span class="line">//将查找封装成一个可以记忆的缓存概念。</span><br><span class="line">    var util = &#123;</span><br><span class="line">        cache: [],</span><br><span class="line">        $id: function( id ) &#123;</span><br><span class="line">            return cache[ id ] || $( &quot;#&quot; + id );</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;;</span><br><span class="line"></span><br><span class="line">    $( &quot;button&quot; ).click(function() &#123;</span><br><span class="line">        var username = util.$id( &quot;username&quot; ).val();</span><br><span class="line">    &#125;);</span><br></pre></td></tr></table></figure></p>
+<p>该分享笔记ending~</p>
+
+  </section>
+
+  <section class="post-comments">
+
+    <!-- 将评论系统（例如Disqus、多说、友言、畅言等）提供的代码片段粘贴在这里 -->
+    
+</section>
+
+
+</article>
+
+
+            <footer class="footer">
+
+    <span class="footer__copyright">&copy; 2014-2015. | 由<a href="https://hexo.io/">Hexo</a>强力驱动 | 主题<a href="https://github.com/someus/huno">Huno</a></span>
+    
+</footer>
+        </div>
+    </div>
+
+    <!-- js files -->
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/main.js"></script>
+    <script src="/js/scale.fix.js"></script>
+    
+
+    
+
+    <script type="text/javascript" src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/javascript"> 
+        $(document).ready(function(){
+            MathJax.Hub.Config({ 
+                tex2jax: {inlineMath: [['[latex]','[/latex]'], ['\\(','\\)']]} 
+            });
+        });
+    </script>
+
+
+    
+
+    <script src="/js/awesome-toc.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $.awesome_toc({
+                overlay: true,
+                contentId: "post-content",
+            });
+        });
+    </script>
+
+
+    
+    
+    <!--kill ie6 -->
+<!--[if IE 6]>
+  <script src="//letskillie6.googlecode.com/svn/trunk/2/zh_CN.js"></script>
+<![endif]-->
+
+</body>
+</html>
