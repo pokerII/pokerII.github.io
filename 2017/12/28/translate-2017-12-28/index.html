@@ -23,7 +23,7 @@
 <meta property="og:site_name" content="PokerII">
 <meta property="og:description" content="原文地址：https://www.sitepoint.com/10-tips-to-become-a-better-node-developer/ 2017年成为一个更好的NodeJs开发者的10个小技巧由网站的访客Azat Mardan缩写，SitePoint(网站)访客发文旨在从网站社区活跃的作者和发言者带来有吸引力的内容。 提示：这篇文章原来的标题是「权威平台最好的Nodejs开发实践」。这">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2017-12-28T06:10:47.000Z">
+<meta property="og:updated_time" content="2018-01-03T01:36:37.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="10 Tips to Become a Better Node Developer in 2017 | PokerII">
 <meta name="twitter:description" content="原文地址：https://www.sitepoint.com/10-tips-to-become-a-better-node-developer/ 2017年成为一个更好的NodeJs开发者的10个小技巧由网站的访客Azat Mardan缩写，SitePoint(网站)访客发文旨在从网站社区活跃的作者和发言者带来有吸引力的内容。 提示：这篇文章原来的标题是「权威平台最好的Nodejs开发实践」。这">
@@ -217,7 +217,16 @@ classes that you can use:
 </ol>
 <p>因此我们分别详细描述一下各个点的细节。</p>
 <p>不要忘了： 这是第一部分提醒，你可以找到另外的十个建议在<a href="https://www.sitepoint.com/node-js-best-practices-from-the-node-gurus/" target="_blank" rel="noopener">第二部分</a></p>
-<h4 id="避免复杂"><a href="#避免复杂" class="headerlink" title="避免复杂"></a>避免复杂</h4>
+<h4 id="避免复杂"><a href="#避免复杂" class="headerlink" title="避免复杂"></a>避免复杂</h4><p>我们看一下npm创建者lsaac Z.Schlueter写的模块，例如强制使用<code>use strict</code>声明模块的js严格模式，仅仅三行代码</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">var module = require(&apos;module&apos;)</span><br><span class="line">module.wrapper[0] += &apos;&quot;use strict&quot;;&apos;</span><br><span class="line">Object.freeze(module.wrap)</span><br></pre></td></tr></table></figure>
+<p>因此为啥要避免复杂？ 一个著名被美国海军记录的传奇发言：保持简单笨拙，因为有个原因是，人类的大脑只能记住5到7个点在它工作的记忆里面每个时间点，这是事实。</p>
+<p>通过保持你的代码在更小的模块单元里面，你和其他开发者会更好明白。你也可以更好的做测试，看下面这个例子：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">app.use(function(req,res,next)&#123;</span><br><span class="line">    if(req.session.main === true) return next()</span><br><span class="line">    else return next(new Error(&apos;Not authorized&apos;))</span><br><span class="line">&#125;, function(req, res, next)&#123;</span><br><span class="line">    req.db = db</span><br><span class="line">    next()</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
+<p>或者</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">const auth = require(&apos;./middleware/auth.js&apos;)</span><br><span class="line">const db = require(&apos;./middleware/db.js&apos;)(db)</span><br><span class="line">app.use(auth, db)</span><br></pre></td></tr></table></figure>
+<p>我想你应该更喜欢第二种写法，特别是命名清晰，当然当你写代码你可能会想怎么去执行，你也可能会自作聪明将多个调用链写到一行代码中，请不要让代码不可读，这个代码如果你六个月不看，当你在回头再来看的时候，这个代码可能对你的智力是个挑战，后面你可能会理解的很困难，就像你现在去回忆大学的复杂的算法逻辑一样，保持代码单一，特别是在node中使用异步编码的时候</p>
+<p>在left-pad事故中，只影响了那些依赖他的县阿姆，在公共项目注册和替换11分钟，小而精比依赖外部更明智，并且npm在更改取消发布规则，任何一个严谨的项目都应该使用缓存策略和私有库作为短期策略。</p>
+
   </section>
 
   <section class="post-comments">
